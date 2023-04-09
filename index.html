@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Weight Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="up">Weight Converter</h1>
+        <input type="number" id="inp">
+        <h1 id="kg" class="clas"></h1>
+        <h1 id="gram" class="clas"></h1>
+    </div>
+    <script>
+        document.getElementById('inp').value=1;
+        document.getElementById('inp').addEventListener('input',function(e){
+            let lbs= e.target.value;
+            document.getElementById('kg').innerHTML= `KG ${lbs/2.205}`;
+            document.getElementById('gram').innerHTML= `GRAM ${lbs*453.6}`;
+
+        });
+    </script>
+</body>
+</html>

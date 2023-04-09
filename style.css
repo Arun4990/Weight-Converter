@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #BB86Fc;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#inp{
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 1em;
+    outline: none;
+    width: 25%;
+}
+.up{
+    margin: 1em 0;
+    font-size: 3rem;
+    color: white;
+}
+.clas{
+    margin-top: 1em;
+    color: whitesmoke;
+    background-color: #181818;
+    padding: .5em;
+    border-radius: 1em;
+}
+@media(max-width:375px){
+    #inp{
+        width: 80%;
+    }
+    
+}
